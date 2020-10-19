@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package poto;
+
+message GetAllResponse {
+    repeated GetItemResponse items = 1;
+}
+
+message GetItemResponse {
+    string name = 1;
+    string year = 2;
+}
+
+message GetDetailRequest {
+    string id = 1;
+}
+
+message GetDetailResponse {
+    string id = 1;
+    string name = 2;
+    string year = 3;
+}
+
+message GetAllRequest {
+
+}
+
+service GetService {
+    rpc GetAllService (GetAllRequest) returns (GetAllResponse);
+    rpc GetDetailService (GetDetailRequest) returns (GetDetailResponse);
+}

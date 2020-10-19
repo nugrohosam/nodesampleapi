@@ -1,0 +1,33 @@
+{
+  "name": "nodesampleapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nugrohosam/nodesampleapi.git"
+  },
+  "author": "Nugroho Samiyono",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nugrohosam/nodesampleapi/issues"
+  },
+  "homepage": "https://github.com/nugrohosam/nodesampleapi#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.1.7",
+    "@grpc/proto-loader": "^0.5.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-router-group": "^0.1.4",
+    "express-session": "^1.17.1",
+    "google-protobuf": "^3.6.1",
+    "knex": "^0.21.6",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
