@@ -1,4 +1,4 @@
-const authService = require('../../grpc/client/auth-service-client')
+const authService = require('../../grpc/client/auth/auth-service-client')
 
 module.exports = {
     defineUser: async (req, res, next) => {

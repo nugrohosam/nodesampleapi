@@ -2,7 +2,8 @@ require('dotenv').config()
 const grpc = require('@grpc/grpc-js')
 const loader = require('@grpc/proto-loader')
 
-const packageDefinition = loader.loadSync('../gosampleapi/proto/auth_service.proto', {
+const pathProto = process.env.PROTOBUF_AUTH_SERVICE_LINK
+const packageDefinition = loader.loadSync(pathProto, {
     keepCase: true,
     longs: String,
     enum: String,
