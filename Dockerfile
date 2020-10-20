@@ -10,4 +10,6 @@ RUN npm install
 
 EXPOSE 3000
 
+CMD ["npm", "run", "download-all-proto"]
+
 CMD ["npm", "start"]

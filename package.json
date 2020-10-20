@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "download-all-proto": "node download-all-proto",
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,12 +21,11 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.1.7",
     "@grpc/proto-loader": "^0.5.5",
-    "axios": "^0.20.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-router-group": "^0.1.4",
-    "express-session": "^1.17.1",
     "google-protobuf": "^3.6.1",
+    "http": "0.0.1-security",
     "knex": "^0.21.6",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",

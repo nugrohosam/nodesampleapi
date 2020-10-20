@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package poto;
+package proto;
 
 message GetAllResponse {
     repeated GetItemResponse items = 1;
@@ -22,7 +22,8 @@ message GetDetailResponse {
 }
 
 message GetAllRequest {
-
+    int32 limit = 1;
+    bool paginate = 2; 
 }
 
 service GetService {

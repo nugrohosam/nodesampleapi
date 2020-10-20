@@ -3,7 +3,7 @@ const book = require('../../../../usecases/book');
 const bookUsecases = require('../../../../usecases/book')
 
 router.get('/', (req, res) => {
-    userId = req.session.userId
+    userId = req.userId
     bookUsecases.getAllData(userId)
 });
 

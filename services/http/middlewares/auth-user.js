@@ -8,12 +8,7 @@ module.exports = {
                 res.status(401).json({ error: { msg: 'Unautorized' } });
                 return
             } else {
-                req.session.user = {
-                    id: response.id,
-                    name: response.name,
-                    username: response.username,
-                    email: response.email,
-                }
+                req.user = response
                 next()
             }
         })
@@ -25,7 +20,7 @@ module.exports = {
                 res.status(401).json({ error: { msg: 'Unautorized' } });
                 return
             } else {
-                req.session.userId = response.id
+                req.userId = response
                 next()
             }
         })
